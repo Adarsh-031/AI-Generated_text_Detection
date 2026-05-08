@@ -37,10 +37,10 @@ def clean_text(text):
 
 print("Loading dataset...")
 
-df = pd.read_csv("../data/Data.csv")
+df = pd.read_csv("../data/Data1.csv")
 
 # Select required columns
-df = df[["text_content", "is_ai_generated"]]
+df = df[["text", "label"]]
 
 # Rename columns
 df.columns = ["text", "label"]
